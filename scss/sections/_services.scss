@@ -1,0 +1,127 @@
+.reviews {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 600px;
+  position: relative;
+  // overflow: hidden;
+  &__img {
+    overflow: hidden;
+
+    // justify-content: center;
+    // align-items: center;
+    width: 300px;
+    margin: auto;
+    height: 420px;
+    position: relative;
+    & > div {
+      // padding: 10px 16px;
+      background: $secondary-clr;
+    }
+  }
+  &__article {
+    overflow: hidden;
+    margin-top: 30px;
+
+    position: relative;
+    color: $gray-clr;
+    @include rale-paraMobile;
+    font-weight: $font-weight;
+    min-height: 150px;
+    width: 100%;
+    & > article {
+      & > h1 {
+        font-size: 57px;
+        line-height: 40px;
+        color: $accent-clr;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__button {
+    max-width: 200px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 105%;
+    left: 0%;
+  }
+}
+
+.right,
+.left {
+  cursor: pointer;
+  border: transparent;
+  background: transparent;
+  width: 50px;
+  height: 30px;
+  padding: 7px;
+  &:focus > img {
+    filter: none !important;
+    border: 1px solid $accent-clr;
+  }
+
+  &:hover > img {
+    transform: scale(1.1);
+    filter: brightness(0.1);
+    // color: $secondary-clr;
+  }
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.left {
+  transform: scale(1.7);
+}
+
+.right + .left {
+  margin-left: 27px;
+}
+
+.article {
+  transition: all 0.3s ease-in-out;
+}
+
+// .active-rev {
+//   transform: translateX(0%);
+// }
+
+// .next-slide {
+//   transform: translateX(-100%);
+// }
+
+// .last-slide {
+//   transform: translateX(100%);
+// }
+
+.shift-img {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  left: 0%;
+  transition: all 0.3s ease-in-out;
+
+  & > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.a-div {
+  padding: 10px 10px;
+  display: inline-block;
+  max-width: 400px;
+  background: $secondary-clr;
+  margin: auto;
+}
+
+.shift-article {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}

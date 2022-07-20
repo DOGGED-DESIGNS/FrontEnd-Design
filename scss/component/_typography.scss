@@ -1,0 +1,46 @@
+// typo for desktop
+
+@mixin rale-paraDesktop {
+  font-family: $font-raleway;
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+@mixin roboto-bigTitleDesktop {
+  font-family: $font-roboto;
+  font-size: 35px;
+  line-height: 50px;
+  font-weight: 800;
+}
+
+@mixin roboto-semiTitleDesktop {
+  font-family: $font-roboto;
+  font-size: 26px;
+  line-height: 38px;
+  font-weight: 500px;
+}
+
+// typo for mobile
+@mixin roboto-bigTitleMobile {
+  font-family: $font-roboto;
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+@mixin roboto-semiTitleMobile {
+  font-family: $font-roboto;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@mixin rale-paraMobile {
+  font-family: $font-raleway;
+  font-size: 14px;
+  font-weight: lighter;
+  line-height: 20px;
+}

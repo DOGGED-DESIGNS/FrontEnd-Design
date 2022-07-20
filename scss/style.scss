@@ -1,0 +1,20 @@
+// COMPONENT.
+
+@import "./component/variable";
+@import "./component/mixings";
+@import "./component/typography";
+@import "./component/animations";
+@import "./component/buttons";
+
+// SECTION
+
+@import "./sections/about";
+@import "./sections/footer";
+@import "./sections/header";
+@import "./sections/services";
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
